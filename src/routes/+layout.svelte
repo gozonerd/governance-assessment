@@ -31,14 +31,32 @@
 	</main>
 
 	<footer class="border-t border-[var(--color-border-muted)] px-6 py-4">
-		<p class="text-center text-xs text-[var(--color-text-muted)]">
-			Built by Krystal Martinez |
-			<a
-				href="https://governance.krystalmartinez.com"
-				class="hover:text-[var(--color-text-secondary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
-			>
-				governance.krystalmartinez.com
-			</a>
-		</p>
+		<div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+			<p class="text-xs text-[var(--color-text-muted)]">
+				Built by Krystal Martinez |
+				<a
+					href="https://governance.krystalmartinez.com"
+					class="hover:text-[var(--color-text-secondary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
+				>
+					governance.krystalmartinez.com
+				</a>
+			</p>
+			<nav class="flex gap-4 text-xs text-[var(--color-text-muted)]" aria-label="Legal">
+				<a
+					href="/privacy"
+					class="hover:text-[var(--color-text-secondary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
+					data-testid="footer-privacy"
+				>
+					Privacy Policy
+				</a>
+				<a
+					href="/terms"
+					class="hover:text-[var(--color-text-secondary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
+					data-testid="footer-terms"
+				>
+					Terms of Use
+				</a>
+			</nav>
+		</div>
 	</footer>
 </div>
