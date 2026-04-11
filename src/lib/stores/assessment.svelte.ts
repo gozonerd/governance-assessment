@@ -81,7 +81,8 @@ class AssessmentStore {
 			overallScore,
 			overallRiskLevel,
 			recommendations,
-			completedAt: new Date()
+			completedAt: new Date(),
+			responses: new Map(this._responses)
 		};
 		this._isComplete = true;
 	}

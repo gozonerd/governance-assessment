@@ -42,6 +42,7 @@ export const questions: AssessmentQuestion[] = [
 		text: 'How are new AI tools evaluated and approved before use in your organization?',
 		helpText:
 			'Shadow AI often enters organizations because legitimate evaluation channels are too slow or unclear. A fast, lightweight approval process reduces shadow AI adoption while maintaining governance.',
+		regulatoryRef: 'EU AI Act Art. 9; NIST AI RMF – GOVERN 1.1',
 		options: [
 			{ score: 0, label: 'There is no formal evaluation or approval process' },
 			{ score: 1, label: 'Approval happens informally or inconsistently' },
@@ -138,6 +139,7 @@ export const questions: AssessmentQuestion[] = [
 		text: 'How are AI governance policies communicated to employees?',
 		helpText:
 			'A policy that no one knows about provides no protection. Employees who discover AI tools without guidance will create their own workarounds, contributing to shadow AI proliferation and data risk.',
+		regulatoryRef: 'EU AI Act Art. 16(e); NIST AI RMF – GOVERN 5.1',
 		options: [
 			{ score: 0, label: 'Policies are not communicated beyond those who drafted them' },
 			{ score: 1, label: 'Policies exist but are only accessible if employees seek them out' },
@@ -161,8 +163,8 @@ export const questions: AssessmentQuestion[] = [
 		weight: 3,
 		text: 'How does your organization identify and assess risks from AI systems?',
 		helpText:
-			'The OWASP LLM Top 10 (2025) identifies prompt injection, sensitive information disclosure, and supply chain vulnerabilities as leading AI risks. Identifying these risks requires systematic assessment — reactive approaches miss risks until harm occurs.',
-		regulatoryRef: 'OWASP LLM Top 10 2025; EU AI Act Art. 9',
+			'The OWASP LLM Top 10 (2025) identifies prompt injection, sensitive information disclosure, and supply chain vulnerabilities as leading AI risks. Identifying these risks requires systematic assessment — reactive approaches miss risks until harm occurs. The NIST AI Risk Management Framework (AI RMF) provides a complementary structured approach for identifying and managing AI-specific risks.',
+		regulatoryRef: 'OWASP LLM Top 10 2025; EU AI Act Art. 9; NIST AI RMF – MAP 1.1',
 		options: [
 			{ score: 0, label: 'We do not formally assess risks from AI systems' },
 			{ score: 1, label: 'Risk assessment happens reactively after incidents' },
@@ -257,7 +259,7 @@ export const questions: AssessmentQuestion[] = [
 		weight: 2,
 		text: 'Are you tracking Colorado AI Act (SB 24-205) obligations?',
 		helpText:
-			'Colorado SB 24-205 takes effect June 30, 2026 — the earliest state AI law in the US. It requires risk assessments and disclosures for algorithmic decision-making in consequential decisions (employment, credit, education, housing). Many organizations do not realize they are covered.',
+			'Colorado SB 24-205 takes effect June 30, 2026 — the earliest state AI law in the US. It requires risk assessments and disclosures for algorithmic decision-making in consequential decisions (employment, credit, education, housing). Many organizations do not realize they are covered. Note: The Colorado legislature may amend the June 30, 2026 effective date — monitor for updates.',
 		regulatoryRef: 'Colorado SB 24-205 §6-1-1703',
 		options: [
 			{ score: 0, label: 'Not aware of or not tracking Colorado AI Act obligations' },

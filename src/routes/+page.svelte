@@ -18,7 +18,7 @@
 		</h1>
 		<p class="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
 			18 questions. 5 categories. ~5 minutes. Receive a scored dashboard and downloadable PDF report
-			grounded in EU AI Act, Colorado AI Act, and OWASP LLM Top 10 requirements.
+			grounded in EU AI Act, Colorado AI Act, NIST AI RMF, and OWASP LLM Top 10 requirements.
 		</p>
 		<Button variant="primary" onclick={() => goto('/assess')} data-testid="cta-start">
 			Start Assessment
@@ -39,6 +39,9 @@
 			<p class="text-sm text-[var(--color-text-secondary)]">
 				of organizations have unapproved AI tools ("shadow AI") in use
 			</p>
+			<p class="text-xs text-[var(--color-text-muted)] mt-2">
+				Source: Reco AI Risk Report 2024
+			</p>
 		</div>
 		<div
 			class="bg-[var(--color-bg-panel)] border border-[var(--color-border-muted)] rounded-xl p-6 text-center"
@@ -48,14 +51,20 @@
 			<p class="text-sm text-[var(--color-text-secondary)]">
 				additional breach cost when shadow AI is involved in a data breach
 			</p>
+			<p class="text-xs text-[var(--color-text-muted)] mt-2">
+				Source: IBM Cost of a Data Breach Report 2025
+			</p>
 		</div>
 		<div
 			class="bg-[var(--color-bg-panel)] border border-[var(--color-border-muted)] rounded-xl p-6 text-center"
 			data-testid="stat-governance"
 		>
-			<p class="text-4xl font-bold text-[var(--color-risk-moderate)] mb-2">36%</p>
+			<p class="text-4xl font-bold text-[var(--color-risk-moderate)] mb-2">&lt;40%</p>
 			<p class="text-sm text-[var(--color-text-secondary)]">
 				of organizations have a formal AI governance policy in place
+			</p>
+			<p class="text-xs text-[var(--color-text-muted)] mt-2">
+				Source: Reco AI Risk Report 2024
 			</p>
 		</div>
 	</div>

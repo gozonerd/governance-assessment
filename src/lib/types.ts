@@ -53,4 +53,5 @@ export interface AssessmentResult {
 	overallRiskLevel: RiskLevel;
 	recommendations: Recommendation[];
 	completedAt: Date;
+	responses?: ReadonlyMap<string, AssessmentResponse>;
 }

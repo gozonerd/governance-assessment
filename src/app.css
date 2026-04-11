@@ -64,6 +64,35 @@ body {
 	min-height: 100vh;
 }
 
+/* ─── Light mode overrides ────────────────────────────────────────────────── */
+html.light {
+	--color-bg-primary: #f8fafc;
+	--color-bg-panel: #ffffff;
+	--color-bg-card: #f1f5f9;
+	--color-bg-elevated: #e2e8f0;
+	--color-border-default: #cbd5e1;
+	--color-border-muted: #e2e8f0;
+	--color-text-primary: #0f172a;
+	--color-text-secondary: #475569;
+	--color-text-muted: #64748b;
+	--color-primary-muted: rgba(30, 58, 95, 0.1);
+	--color-accent-muted: rgba(13, 148, 136, 0.12);
+}
+
+html.light body {
+	color: var(--color-text-primary);
+	background-color: var(--color-bg-primary);
+}
+
+html.light ::-webkit-scrollbar-track {
+	background: var(--color-bg-card);
+}
+
+html.light ::-webkit-scrollbar-thumb {
+	background: var(--color-bg-elevated);
+}
+
+/* ─── Scrollbar styling ───────────────────────────────────────────────────── */
 /* Scrollbar styling */
 ::-webkit-scrollbar {
 	width: 8px;

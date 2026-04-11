@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <!-- Top accent bar -->
+  <rect width="1200" height="6" fill="#0d9488"/>
+  <!-- Left accent bar -->
+  <rect width="6" height="630" fill="#0d9488"/>
+  <!-- Bottom accent bar -->
+  <rect y="624" width="1200" height="6" fill="#1e3a5f"/>
+
+  <!-- Shield icon -->
+  <g transform="translate(90, 160)">
+    <path d="M80 20 L160 50 L160 110 C160 155 125 190 80 200 C35 190 0 155 0 110 L0 50 Z" fill="#0d9488" opacity="0.85"/>
+    <text x="80" y="138" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">G</text>
+  </g>
+
+  <!-- Main title -->
+  <text x="320" y="240" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#f1f5f9">AI Governance</text>
+  <text x="320" y="318" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#f1f5f9">Readiness Assessment</text>
+
+  <!-- Subtitle -->
+  <text x="320" y="380" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">18 questions · 5 categories · ~5 minutes</text>
+  <text x="320" y="420" font-family="Arial, sans-serif" font-size="28" fill="#94a3b8">EU AI Act · Colorado AI Act · OWASP LLM Top 10</text>
+
+  <!-- CTA strip -->
+  <rect x="320" y="460" width="440" height="56" rx="8" fill="#0d9488"/>
+  <text x="540" y="495" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">Free · No Account Required</text>
+
+  <!-- URL -->
+  <text x="600" y="590" font-family="Arial, sans-serif" font-size="22" fill="#64748b" text-anchor="middle">governance.krystalmartinez.com</text>
+</svg>

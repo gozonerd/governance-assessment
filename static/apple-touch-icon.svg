@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <rect width="180" height="180" rx="36" fill="#0f172a"/>
+  <!-- Shield -->
+  <path d="M90 22 L148 46 L148 95 C148 128 122 155 90 163 C58 155 32 128 32 95 L32 46 Z" fill="#0d9488" opacity="0.9"/>
+  <!-- G -->
+  <text x="90" y="124" font-family="Arial, sans-serif" font-size="74" font-weight="bold" fill="white" text-anchor="middle">G</text>
+</svg>

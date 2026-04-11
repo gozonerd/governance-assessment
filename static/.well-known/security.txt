@@ -1,0 +1,5 @@
+Contact: mailto:privacy@krystalmartinez.com
+Preferred-Languages: en
+Expires: 2027-04-11T00:00:00.000Z
+Canonical: https://governance.krystalmartinez.com/.well-known/security.txt
+Policy: This tool is a static client-side web application. If you discover a vulnerability, please disclose it responsibly via the contact address above.
