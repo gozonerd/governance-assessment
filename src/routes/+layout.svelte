@@ -35,7 +35,7 @@
 			Built by Krystal Martinez |
 			<a
 				href="https://governance.krystalmartinez.com"
-				class="hover:text-[var(--color-text-secondary)] transition-colors"
+				class="hover:text-[var(--color-text-secondary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
 			>
 				governance.krystalmartinez.com
 			</a>

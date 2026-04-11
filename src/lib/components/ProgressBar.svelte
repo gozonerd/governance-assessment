@@ -12,7 +12,7 @@
 <div class="w-full" data-testid="progress-bar">
 	<div class="flex items-center justify-between mb-2">
 		<span class="text-xs text-[var(--color-text-secondary)]">
-			Question {current} of {total}
+			Question {current + 1} of {total}
 		</span>
 		<span class="text-xs font-medium text-[var(--color-accent)]">{percentage}%</span>
 	</div>
