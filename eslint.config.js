@@ -73,7 +73,9 @@ export default ts.config(
 			'@typescript-eslint/no-explicit-any': 'error',
 			'svelte/no-at-html-tags': 'warn',
 			// Svelte 5.53+ keyed #each triggers $.validate_each_keys runtime error in dev
-			'svelte/require-each-key': 'off'
+			'svelte/require-each-key': 'off',
+			// False positive for regular <a> tags and goto() in $effect in pure client-side SvelteKit
+			'svelte/no-navigation-without-resolve': 'off'
 		}
 	}
 );
