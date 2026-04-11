@@ -1,0 +1,90 @@
+@import 'tailwindcss';
+
+/* Governance Assessment Design System */
+@theme {
+	/* Primary palette */
+	--color-primary: #1e3a5f;
+	--color-primary-hover: #2a4f80;
+	--color-primary-muted: rgba(30, 58, 95, 0.15);
+
+	/* Accent — teal, action/clarity */
+	--color-accent: #0d9488;
+	--color-accent-hover: #0f766e;
+	--color-accent-muted: rgba(13, 148, 136, 0.15);
+
+	/* Risk level colors */
+	--color-risk-critical: #ef4444;
+	--color-risk-high: #f97316;
+	--color-risk-moderate: #eab308;
+	--color-risk-low: #22c55e;
+
+	/* Backgrounds */
+	--color-bg-primary: #0f172a;
+	--color-bg-panel: #1e293b;
+	--color-bg-card: #273549;
+	--color-bg-elevated: #334155;
+
+	/* Borders */
+	--color-border-default: #334155;
+	--color-border-muted: #1e293b;
+
+	/* Text */
+	--color-text-primary: #f1f5f9;
+	--color-text-secondary: #94a3b8;
+	--color-text-muted: #64748b;
+
+	/* Semantic */
+	--color-success: #22c55e;
+	--color-warning: #eab308;
+	--color-error: #ef4444;
+	--color-info: #3b82f6;
+
+	/* Focus */
+	--color-focus-ring: rgba(13, 148, 136, 0.5);
+}
+
+/* Base styles */
+:root {
+	font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 400;
+
+	color: var(--color-text-primary);
+	background-color: var(--color-bg-primary);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--color-bg-panel);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--color-bg-card);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--color-bg-elevated);
+}
+
+/* Selection styling */
+::selection {
+	background: var(--color-accent-muted);
+	color: inherit;
+}

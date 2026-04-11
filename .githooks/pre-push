@@ -1,0 +1,49 @@
+#!/bin/sh
+
+# governance-assessment pre-push hook
+# Runs formatting, linting, type checking, and tests before pushing
+
+echo "Running pre-push checks..."
+
+# Ensure we are at the repo root
+cd "$(git rev-parse --show-toplevel)"
+
+# Load nvm for Node 22 (required for SvelteKit toolchain)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm use v22 --silent 2>/dev/null || true
+
+# 1. Prettier format check
+echo "[1/4] Checking formatting (Prettier)..."
+npm run format:check
+if [ $? -ne 0 ]; then
+  echo "❌ Formatting check failed. Run 'npm run format' to fix."
+  exit 1
+fi
+
+# 2. ESLint
+echo "[2/4] Running linter (ESLint)..."
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "❌ Linting failed. Fix the errors above before pushing."
+  exit 1
+fi
+
+# 3. TypeScript/Svelte type check
+echo "[3/4] Running type check (svelte-check)..."
+npm run check
+if [ $? -ne 0 ]; then
+  echo "❌ Type check failed. Fix the errors above before pushing."
+  exit 1
+fi
+
+# 4. Vitest test suite
+echo "[4/4] Running tests (Vitest)..."
+npm test
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Fix the failing tests before pushing."
+  exit 1
+fi
+
+echo "✅ All pre-push checks passed!"
+exit 0

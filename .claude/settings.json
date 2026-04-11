@@ -1,0 +1,25 @@
+{
+	"hooks": {
+		"PostToolUse": [
+			{
+				"matcher": "Edit|Write",
+				"hooks": [
+					{
+						"type": "command",
+						"command": "cd /home/krystal/repos/governance-assessment && export NVM_DIR=\"$HOME/.nvm\" && [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\" && nvm use v22 --silent 2>/dev/null || true && npx prettier --write src/ 2>/dev/null || true"
+					}
+				]
+			}
+		],
+		"Stop": [
+			{
+				"hooks": [
+					{
+						"type": "command",
+						"command": "cd /home/krystal/repos/governance-assessment && export NVM_DIR=\"$HOME/.nvm\" && [ -s \"$NVM_DIR/nvm.sh\" ] && . \"$NVM_DIR/nvm.sh\" && nvm use v22 --silent 2>/dev/null || true && npm run check:all 2>&1 | tail -5"
+					}
+				]
+			}
+		]
+	}
+}
