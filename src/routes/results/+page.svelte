@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 	import { assessment } from '$lib/stores/assessment.svelte.js';
 	import { categories } from '$lib/data/categories.js';
+	import { generateReport } from '$lib/pdf/report.js';
 	import ScoreGauge from '$lib/components/ScoreGauge.svelte';
 	import RegulatoryBanner from '$lib/components/RegulatoryBanner.svelte';
 	import CategoryCard from '$lib/components/CategoryCard.svelte';
@@ -28,6 +29,18 @@
 
 	function getComplianceScore(): number {
 		return results?.categoryScores.find((cs) => cs.categoryId === 'compliance')?.percentage ?? 100;
+	}
+
+	let isGeneratingPdf = $state(false);
+
+	async function handleDownload() {
+		if (!results) return;
+		isGeneratingPdf = true;
+		try {
+			await generateReport(results);
+		} finally {
+			isGeneratingPdf = false;
+		}
 	}
 
 	function handleRetake() {
@@ -99,8 +112,13 @@
 			class="flex flex-col sm:flex-row gap-4 justify-center border-t border-[var(--color-border-muted)] pt-8"
 			data-testid="results-actions"
 		>
-			<Button variant="primary" onclick={() => {}} data-testid="btn-download-pdf">
-				Download PDF Report
+			<Button
+				variant="primary"
+				onclick={handleDownload}
+				disabled={isGeneratingPdf}
+				data-testid="btn-download-pdf"
+			>
+				{isGeneratingPdf ? 'Generating...' : 'Download PDF Report'}
 			</Button>
 			<Button variant="secondary" onclick={handleRetake} data-testid="btn-retake">
 				Retake Assessment
