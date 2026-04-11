@@ -4,6 +4,7 @@ node_modules
 .output
 .vercel
 dist
+coverage
 .netlify
 .wrangler
 /.svelte-kit
