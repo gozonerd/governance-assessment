@@ -8,18 +8,22 @@
 
 	<div class="space-y-8 text-sm text-[var(--color-text-secondary)] leading-relaxed">
 		<section>
-			<h2 class="text-lg font-semibold text-[var(--color-text-primary)] mb-3">
-				Data Controller
-			</h2>
+			<h2 class="text-lg font-semibold text-[var(--color-text-primary)] mb-3">Data Controller</h2>
 			<p>
-				This tool is operated by <strong class="text-[var(--color-text-primary)]">Krystal Martinez</strong>, an independent professional based in the United States. For privacy inquiries, contact:
+				This tool is operated by <strong class="text-[var(--color-text-primary)]"
+					>Krystal Martinez</strong
+				>, an independent professional based in the United States. For privacy inquiries, contact:
 				<a
 					href="mailto:privacy@krystalmartinez.com"
 					class="text-[var(--color-accent)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
-				>privacy@krystalmartinez.com</a>.
+					>privacy@krystalmartinez.com</a
+				>.
 			</p>
 			<p class="mt-2">
-				<strong class="text-[var(--color-text-primary)]">Jurisdiction:</strong> This tool is operated from the United States. If you access this tool from outside the United States, including from the European Economic Area (EEA) or United Kingdom, you acknowledge that your data may be processed in the United States.
+				<strong class="text-[var(--color-text-primary)]">Jurisdiction:</strong> This tool is operated
+				from the United States. If you access this tool from outside the United States, including from
+				the European Economic Area (EEA) or United Kingdom, you acknowledge that your data may be processed
+				in the United States.
 			</p>
 		</section>
 
@@ -56,7 +60,9 @@
 			<p class="mb-3">
 				This application is hosted on <strong class="text-[var(--color-text-primary)]"
 					>Vercel Inc.</strong
-				> (340 Pine Street, Suite 700, San Francisco, CA 94104, USA), acting as a data processor on our behalf. As with any web hosting provider, Vercel automatically processes certain technical data when you visit this site:
+				> (340 Pine Street, Suite 700, San Francisco, CA 94104, USA), acting as a data processor on our
+				behalf. As with any web hosting provider, Vercel automatically processes certain technical data
+				when you visit this site:
 			</p>
 			<ul class="list-disc pl-5 space-y-2">
 				<li>IP address</li>
@@ -65,7 +71,10 @@
 				<li>Referring URL</li>
 			</ul>
 			<p class="mt-3">
-				<strong class="text-[var(--color-text-primary)]">Legal basis (EEA visitors):</strong> Processing of server logs by Vercel is based on our legitimate interest (Article 6(1)(f) GDPR) in operating a secure and functional web service. These logs are retained according to Vercel's standard retention policies.
+				<strong class="text-[var(--color-text-primary)]">Legal basis (EEA visitors):</strong> Processing
+				of server logs by Vercel is based on our legitimate interest (Article 6(1)(f) GDPR) in operating
+				a secure and functional web service. These logs are retained according to Vercel's standard retention
+				policies.
 			</p>
 			<p class="mt-3">
 				This data is processed by Vercel in accordance with their <a
@@ -106,7 +115,9 @@
 				Vercel's privacy policy linked above.
 			</p>
 			<p class="mt-2">
-				EEA and UK residents may have rights under GDPR/UK GDPR including the right to access, rectification, erasure, restriction of processing, and data portability. To the extent any such rights apply to data processed by this tool, please contact us at the address above.
+				EEA and UK residents may have rights under GDPR/UK GDPR including the right to access,
+				rectification, erasure, restriction of processing, and data portability. To the extent any
+				such rights apply to data processed by this tool, please contact us at the address above.
 			</p>
 		</section>
 
@@ -127,7 +138,8 @@
 				<a
 					href="mailto:privacy@krystalmartinez.com"
 					class="text-[var(--color-accent)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)] rounded"
-				>privacy@krystalmartinez.com</a>
+					>privacy@krystalmartinez.com</a
+				>
 			</p>
 		</section>
 	</div>

@@ -386,7 +386,8 @@ function buildCategoryPage(
 					if (y > maxY - 10) break;
 
 					const resp = results.responses.get(q.id);
-					const selectedLabel = resp !== undefined ? (q.options[resp.selectedIndex]?.label ?? '—') : '(not answered)';
+					const selectedLabel =
+						resp !== undefined ? (q.options[resp.selectedIndex]?.label ?? '—') : '(not answered)';
 
 					panelRect(doc, 12, y - 1, w - 24, 12);
 
@@ -637,10 +638,19 @@ function buildMethodology(doc: PDFDoc) {
 	setTextColor(doc, COLOR_TEXT_SECONDARY);
 
 	const scoreRows: [string, string][] = [
-		['Critical Risk (0–25%)', 'Immediate action required; significant regulatory and operational exposure'],
+		[
+			'Critical Risk (0–25%)',
+			'Immediate action required; significant regulatory and operational exposure'
+		],
 		['High Risk (26–50%)', 'Material gaps; prioritized remediation needed within 30–60 days'],
-		['Moderate Risk (51–75%)', 'Partial controls in place; structured improvement plan recommended'],
-		['Low Risk (76–100%)', 'Solid foundation; focus on maintenance, monitoring, and continuous improvement']
+		[
+			'Moderate Risk (51–75%)',
+			'Partial controls in place; structured improvement plan recommended'
+		],
+		[
+			'Low Risk (76–100%)',
+			'Solid foundation; focus on maintenance, monitoring, and continuous improvement'
+		]
 	];
 	for (const [level, desc] of scoreRows) {
 		doc.setFont('helvetica', 'bold');

@@ -113,9 +113,9 @@ describe('generateReport', () => {
 		await expect(generateReport(makePerfectResults())).resolves.toBeUndefined();
 	});
 
-	it('generates exactly 6 pages (addPage called 5 times)', async () => {
+	it('generates exactly 7 pages (addPage called 6 times)', async () => {
 		await generateReport(makeModerateResults());
-		expect(mockAddPage).toHaveBeenCalledTimes(5);
+		expect(mockAddPage).toHaveBeenCalledTimes(6);
 	});
 
 	it('calls doc.save() with correct filename pattern', async () => {

@@ -33,6 +33,7 @@ export default ts.config(
 				HTMLDivElement: 'readonly',
 				MouseEvent: 'readonly',
 				CustomEvent: 'readonly',
+				BeforeUnloadEvent: 'readonly',
 				HTMLSelectElement: 'readonly',
 				HTMLAnchorElement: 'readonly',
 				HTMLButtonElement: 'readonly',

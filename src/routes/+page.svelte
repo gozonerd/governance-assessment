@@ -39,9 +39,7 @@
 			<p class="text-sm text-[var(--color-text-secondary)]">
 				of organizations have unapproved AI tools ("shadow AI") in use
 			</p>
-			<p class="text-xs text-[var(--color-text-muted)] mt-2">
-				Source: Reco AI Risk Report 2024
-			</p>
+			<p class="text-xs text-[var(--color-text-muted)] mt-2">Source: Reco AI Risk Report 2024</p>
 		</div>
 		<div
 			class="bg-[var(--color-bg-panel)] border border-[var(--color-border-muted)] rounded-xl p-6 text-center"
@@ -63,9 +61,7 @@
 			<p class="text-sm text-[var(--color-text-secondary)]">
 				of organizations have a formal AI governance policy in place
 			</p>
-			<p class="text-xs text-[var(--color-text-muted)] mt-2">
-				Source: Reco AI Risk Report 2024
-			</p>
+			<p class="text-xs text-[var(--color-text-muted)] mt-2">Source: Reco AI Risk Report 2024</p>
 		</div>
 	</div>
 

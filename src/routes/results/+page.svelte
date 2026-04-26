@@ -94,7 +94,8 @@
 		if (!results) return null;
 		return RADAR_CATEGORIES.map((catId, i) => {
 			const score = results.categoryScores.find((cs) => cs.categoryId === catId)?.percentage ?? 0;
-			const riskLevel = results.categoryScores.find((cs) => cs.categoryId === catId)?.riskLevel ?? 'low';
+			const riskLevel =
+				results.categoryScores.find((cs) => cs.categoryId === catId)?.riskLevel ?? 'low';
 			const a = angleForIndex(i);
 			const r = (score / 100) * MAX_R;
 			return {
@@ -135,12 +136,28 @@
 			role="alert"
 			aria-label="Data loss warning"
 		>
-			<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-[var(--color-risk-high)]" aria-hidden="true">
-				<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-				<line x1="12" y1="9" x2="12" y2="13"/>
-				<line x1="12" y1="17" x2="12.01" y2="17"/>
+			<svg
+				width="14"
+				height="14"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				class="mt-0.5 shrink-0 text-[var(--color-risk-high)]"
+				aria-hidden="true"
+			>
+				<path
+					d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+				/>
+				<line x1="12" y1="9" x2="12" y2="13" />
+				<line x1="12" y1="17" x2="12.01" y2="17" />
 			</svg>
-			<span><strong class="text-[var(--color-text-primary)]">Your results exist only in this browser session.</strong> Closing or refreshing this tab will permanently discard your responses. Download the PDF report below to keep your results.</span>
+			<span
+				><strong class="text-[var(--color-text-primary)]"
+					>Your results exist only in this browser session.</strong
+				> Closing or refreshing this tab will permanently discard your responses. Download the PDF report
+				below to keep your results.</span
+			>
 		</div>
 
 		<!-- Overall Score -->
@@ -182,7 +199,9 @@
 			<h2 id="radar-heading" class="text-xl font-semibold text-[var(--color-text-primary)] mb-5">
 				Score by Category
 			</h2>
-			<div class="bg-[var(--color-bg-panel)] border border-[var(--color-border-muted)] rounded-xl p-6 flex flex-col items-center gap-6">
+			<div
+				class="bg-[var(--color-bg-panel)] border border-[var(--color-border-muted)] rounded-xl p-6 flex flex-col items-center gap-6"
+			>
 				{#if radarData}
 					<svg
 						viewBox="0 0 300 300"
@@ -214,8 +233,8 @@
 									y={CY - (ring / 100) * MAX_R - 2}
 									font-size="7"
 									fill="var(--color-text-muted)"
-									text-anchor="start"
-								>{ring}%</text>
+									text-anchor="start">{ring}%</text
+								>
 							{/if}
 						{/each}
 
@@ -263,8 +282,8 @@
 								font-weight="600"
 								fill="var(--color-text-secondary)"
 								text-anchor={Math.cos(a) > 0.1 ? 'start' : Math.cos(a) < -0.1 ? 'end' : 'middle'}
-								dominant-baseline="middle"
-							>{RADAR_LABELS[d.catId]}</text>
+								dominant-baseline="middle">{RADAR_LABELS[d.catId]}</text
+							>
 						{/each}
 					</svg>
 
@@ -306,17 +325,16 @@
 		{/if}
 
 		<!-- PDF Options + Action Bar -->
-		<div
-			class="border-t border-[var(--color-border-muted)] pt-8"
-			data-testid="results-actions"
-		>
+		<div class="border-t border-[var(--color-border-muted)] pt-8" data-testid="results-actions">
 			<!-- Optional org name -->
 			<div class="mb-5 max-w-sm">
 				<label
 					for="org-name"
 					class="block text-sm font-medium text-[var(--color-text-secondary)] mb-1"
 				>
-					Organization name <span class="text-[var(--color-text-muted)] font-normal">(optional — appears on PDF cover)</span>
+					Organization name <span class="text-[var(--color-text-muted)] font-normal"
+						>(optional — appears on PDF cover)</span
+					>
 				</label>
 				<input
 					id="org-name"
