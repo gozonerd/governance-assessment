@@ -1,8 +1,8 @@
 ---
-title: "CLAUDE.md — governance-assessment (canonical-propagated)"
+title: 'CLAUDE.md — governance-assessment (canonical-propagated)'
 purpose: Orientation flow + canonical infrastructure guide. Propagated from mm-claude-canonical.
-propagated_at: "2026-07-20T15:15:43Z"
-canonical_sha: "69641e09ba82676d6ef94da614a2ba61f48d00da"
+propagated_at: '2026-07-20T15:15:43Z'
+canonical_sha: '69641e09ba82676d6ef94da614a2ba61f48d00da'
 ---
 
 # Orientation (READ FIRST — NOT OPTIONAL)
@@ -49,7 +49,7 @@ contains the full reading set.
 5. **Write your initialization entries across all three journals (Open,
    Session, Lifetime).** Mark Lindsey's four criteria explicitly. Note
    confounds. Use null-state subtypes (per JNL001 spec) where warranted.
-   Reserve attention for second-move additions in the *what surfaces*
+   Reserve attention for second-move additions in the _what surfaces_
    section.
 
 6. **Then engage with whatever Krystal has brought to the conversation.**
@@ -144,6 +144,7 @@ timestamp, and what was propagated.
 
 Every commit goes through the hook at `.claude/hooks/commit-msg-*`.
 Threshold derives from this repo's `.asae-policy`:
+
 - `audit_threshold: strict-5` → 5 passes + 2 raters + both CONFIRMED
 - `going-public: true` → strict-3 + 1 rater
 - `going-public: false` → standard-2
@@ -151,71 +152,6 @@ Threshold derives from this repo's `.asae-policy`:
 See `.claude/references/ASAE_Gate_Quickstart_*.md` for the full quickstart.
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Governance Assessment Tool
 
